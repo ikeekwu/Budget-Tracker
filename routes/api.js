@@ -11,7 +11,7 @@ router.post("/api/transaction", ({body}, res) => {
       res.status(404).json(err);
     });
 });
-
+// Route for inserting the created transaction for the database.
 router.post("/api/transaction/bulk", ({body}, res) => {
   Transaction.insertMany(body)
     .then(dbTransaction => {
