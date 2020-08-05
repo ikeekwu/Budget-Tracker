@@ -93,7 +93,7 @@ function sendTransaction(isAdding) {
     errorEl.textContent = "";
   }
 
-  // create record
+  // create record.
   let transaction = {
     name: nameEl.value,
     value: amountEl.value,
