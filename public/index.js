@@ -84,7 +84,7 @@ function sendTransaction(isAdding) {
   let amountEl = document.querySelector("#t-amount");
   let errorEl = document.querySelector(".form .error");
 
-  // validate form
+  // validate form.
   if (nameEl.value === "" || amountEl.value === "") {
     errorEl.textContent = "Missing Information";
     return;
