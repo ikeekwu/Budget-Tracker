@@ -15,13 +15,13 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// makes connction to server
+// makes connction to server!
 mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
 
-// routes
+// accesses JS file that controls api
 app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
