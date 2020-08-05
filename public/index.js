@@ -42,7 +42,7 @@ function populateTable() {
 }
 
 function populateChart() {
-  // copy array and reverse it
+  // copy array and reverse it.
   let reversed = transactions.slice().reverse();
   let sum = 0;
 
