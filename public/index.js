@@ -105,7 +105,7 @@ function sendTransaction(isAdding) {
     transaction.value *= -1;
   }
 
-  // add to beginning of current array of data
+  // add to beginning of current array of data.
   transactions.unshift(transaction);
 
   // re-run logic to populate ui with new record
